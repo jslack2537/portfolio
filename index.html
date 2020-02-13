@@ -1,0 +1,182 @@
+<html>
+	<head>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+	 <link
+    rel="stylesheet"
+    href="prism-atom-dark.css"
+    type="text/css"
+    media="screen"
+  />
+
+  <script type="text/javascript" src="prism.js"></script>
+  <script type="text/javascript" src="prism.ruby.js"></script>
+
+	</head>
+
+	<body>
+	  <div class="about-container">
+		<div class="about">
+			<img src="me.jpg" class="me" />
+
+			<h1>Charles Slack</h1>
+		
+
+			<h2>WEB DEVELOPER</h2>
+			<hr class="grey" />		
+			
+			<p class="bio">
+				Charles Slack is an aspiring Web Developer with plentiful experience in the information technology field. He has worked on teams that have developed HIPAA complient electronic healthcare record applications and has a burning passion to build new and awesome web apps.
+			</p>
+		</div>
+	  </div>
+	
+	<h3>Code Snippets</h3>
+  <hr class="yellow">
+
+  <div class="box">
+ <h4>Temperature Conversion</h4>
+  <p>
+    This Ruby program will prompt the user for a temperature
+    in degrees Celsius and let the user know what the
+    corresponding temperature is in Fahrenheit.
+  </p>
+  </div>
+  <div class="box">
+    <pre><code class="language-ruby">
+  #This Program Converts Celsius to Fahrenheit
+
+#Written by Charles Slack
+
+#define methods
+
+def convert(c)
+    return (c * 9/5) + 32
+end
+
+# ask for user input
+
+puts &quot;Please enter the degrees in Celcius, that you would like to convert to Fahrenheit:&quot;
+
+temp = gets.chomp
+
+# convert string to float
+
+cel = temp.to_f
+
+# store conversion answer to varible
+
+f = convert(cel)
+
+# convert to string
+
+output = temp + &quot; degrees Celsius is &quot; + f.to_s + &quot; degrees Fahrenheit&quot;
+
+#write answer to terminal
+
+puts output 
+</code></pre>
+  </div>
+
+<br class="clear">
+
+  <div class="box">
+     <pre><code class="language-ruby">
+
+#this program changes number into positional ordinals
+
+#define methods
+
+def ordinal()
+
+ n = gets.chomp.to_i
+    lop1 = n % 10
+    lop2 = n % 100
+    if lop2 &gt;= 11 &amp;&amp; lop2 &lt;= 19
+       return &quot;#{n}th&quot;
+    end
+    if lop1 == 1
+     return &quot;#{n}st&quot;
+  elsif lop1 == 2   
+     return &quot;#{n}nd&quot; 
+  elsif lop1 == 3
+    return &quot;#{n}rd&quot;  
+  else
+    return &quot;#{n}th&quot; 
+ end   
+end
+
+#user input and method call
+
+puts &quot;Enter a Number&quot;
+ord = ordinal()
+
+#terminal output
+puts ord
+</code></pre>
+    </div>
+
+    <div class="box">
+      <h4>Ordinal Challenge</h4>
+      <p>
+        This ruby program will convert a plain number
+        to the ordinal of the number. So for example,
+        if the user enters 2, it will display 2nd, if
+        the user enters 3, it will display 3rd, etc.
+      </p>
+    </div>
+<br class="clear" />
+
+    <div class="box">
+      <h4>Foobar</h4>
+      <p>
+        This ruby program is an adaptation of a classic technical
+        interview problem which displays sequences
+        of the Foobar pattern.
+      </p>
+    </div>
+
+    <div class="box">
+   <pre><code class="language-ruby">
+    #This program solves for FOOBAR
+
+#Written by charles slack
+
+#user input
+
+puts &quot;How many items do you want to see?&quot;
+var= gets.to_i
+ 
+#do a loop        
+var.times do |a|
+    var += 1 
+    foo = a % 3
+    bar = a % 5
+    if foo == 0 &amp;&amp; bar == 0
+      print &quot; foobar &quot;
+    elsif foo == 0
+      print &quot; foo&quot;
+    elsif bar == 0
+      print &quot; bar &quot;
+    else
+     print &quot; #{a} &quot;
+    end  
+end
+
+#terminal output
+puts var
+  </code></pre>
+    </div>
+
+    <br class="clear" />
+
+
+
+  </div>
+
+
+	</body>
+
+</html>
