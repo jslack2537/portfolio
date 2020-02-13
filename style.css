@@ -66,6 +66,8 @@ h3 {
 .yellow {
   border-top: 5px double #F5A623;
   width: 250px;
+  border-bottom: none;
+  border-right: none;
 }
 
 .box {
@@ -95,3 +97,63 @@ p {
 .flex-container {
 	display: flex;
 }
+
+.full-width {
+    width: 100%;
+  }
+
+  .skills-and-tools {
+    max-width: 400px;
+    margin: 40px auto;
+  }
+
+  .icons {
+    text-align: center;
+  }
+  
+  .icon {
+    margin: 30px 0;
+  }
+
+  .contact-link {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .contact-info {
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+  }
+
+  .contact-me {
+    height: 350px;
+    background-color: #202020;
+    padding-top: 30px;
+  }
+
+  .contact-headline {
+    color: white;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 12px;
+    width: 100px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    margin-left: 30px;
+  }
+  .hire-me {
+    border-style: solid;
+    border-color: white;
+  }
