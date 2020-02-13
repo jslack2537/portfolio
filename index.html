@@ -43,73 +43,73 @@
     in degrees Celsius and let the user know what the
     corresponding temperature is in Fahrenheit.
   </p>
-  </div>
-  <div class="box">
-    <pre><code class="language-ruby">
-  #This Program Converts Celsius to Fahrenheit
 
+    <pre><code class="language-ruby">
+#This Program Converts Celsius to Fahrenheit
 #Written by Charles Slack
 
 #define methods
-
 def convert(c)
     return (c * 9/5) + 32
 end
 
 # ask for user input
-
 puts &quot;Please enter the degrees in Celcius, that you would like to convert to Fahrenheit:&quot;
-
 temp = gets.chomp
 
 # convert string to float
-
 cel = temp.to_f
 
 # store conversion answer to varible
-
 f = convert(cel)
 
 # convert to string
-
 output = temp + &quot; degrees Celsius is &quot; + f.to_s + &quot; degrees Fahrenheit&quot;
 
 #write answer to terminal
-
 puts output 
 </code></pre>
   </div>
 
 <br class="clear">
+<div class="box">
+    <h4>Ordinal Challenge</h4>
+    <p>
+      This ruby program will convert a plain number
+      to the ordinal of the number. So for example,
+      if the user enters 2, it will display 2nd, if
+      the user enters 3, it will display 3rd, etc.
+    </p>
+  </div>
 
   <div class="box">
      <pre><code class="language-ruby">
 
 #this program changes number into positional ordinals
+#written by Charles Slack
 
 #define methods
-
 def ordinal()
-
  n = gets.chomp.to_i
     lop1 = n % 10
     lop2 = n % 100
-    if lop2 &gt;= 11 &amp;&amp; lop2 &lt;= 19
-       return &quot;#{n}th&quot;
-    end
-    if lop1 == 1
-     return &quot;#{n}st&quot;
-  elsif lop1 == 2   
-     return &quot;#{n}nd&quot; 
-  elsif lop1 == 3
-    return &quot;#{n}rd&quot;  
-  else
-    return &quot;#{n}th&quot; 
- end   
+
+        if lop2 &gt;= 11 &amp;&amp; lop2 &lt;= 19
+        return &quot;#{n}th&quot;
+        end
+
+        if lop1 == 1
+            return &quot;#{n}st&quot;
+        elsif lop1 == 2   
+            return &quot;#{n}nd&quot; 
+        elsif lop1 == 3
+            return &quot;#{n}rd&quot;  
+        else
+            return &quot;#{n}th&quot; 
+        end   
 end
 
 #user input and method call
-
 puts &quot;Enter a Number&quot;
 ord = ordinal()
 
@@ -118,15 +118,7 @@ puts ord
 </code></pre>
     </div>
 
-    <div class="box">
-      <h4>Ordinal Challenge</h4>
-      <p>
-        This ruby program will convert a plain number
-        to the ordinal of the number. So for example,
-        if the user enters 2, it will display 2nd, if
-        the user enters 3, it will display 3rd, etc.
-      </p>
-    </div>
+  
 <br class="clear" />
 
     <div class="box">
@@ -140,16 +132,14 @@ puts ord
 
     <div class="box">
    <pre><code class="language-ruby">
-    #This program solves for FOOBAR
-
+#This program solves for FOOBAR
 #Written by charles slack
 
 #user input
-
 puts &quot;How many items do you want to see?&quot;
 var= gets.to_i
- 
-#do a loop        
+
+ #do a loop        
 var.times do |a|
     var += 1 
     foo = a % 3
@@ -169,14 +159,7 @@ end
 puts var
   </code></pre>
     </div>
-
     <br class="clear" />
-
-
-
   </div>
-
-
 	</body>
-
 </html>
